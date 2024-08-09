@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="icon" href="apple-logo-white-bg.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* Navbar */
+
+        header {
+            position: sticky;
+            top: 0px;
+            background-color: whitesmoke;
+            opacity: 95%;
+        }
+
+        .navbar {
+            font-size: 15px;
+            display: flex;
+            padding: 0.5vh 6.5vw 0.5vh 6.5vw;
+            align-items: center;
+            position: relative;
+            justify-content: center;
+        }
+
+        .navbar li {
+            list-style: none;
+            padding-left: 2.25vw;
+        }
+
+        .navbar li:last-child {
+            padding-left: 1vw;
+        }
+
+        .navbar a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Main Body */
+
+        h1 {
+            font-size: 65px;
+            font-weight: 450;
+            padding: 0.5vh;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 450;
+            padding: 0.5vh;
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: 400;
+            padding: 0.5vh;
+        }
+
+        h4 {
+            font-size: 25px;
+            font-weight: 400;
+            padding: 0.5vh;
+        }
+
+        .box1 {
+            text-align: center;
+            margin-bottom: 2vh;
+            padding: 4vh;
+            background-color: whitesmoke;
+        }
+
+        .box1 p {
+            color: gray;
+            padding: 1vh;
+            font-size: 25px;
+        }
+
+        .button {
+            display: inline;
+        }
+
+        .button-1-1 {
+            background-color: rgb(47, 114, 240);
+            color: white;
+            padding: 1.5vh 1.25vw;
+            font-size: 20px;
+            border: 1px;
+            border-radius: 30px;
+            margin-top: 2vh;
+            margin-right: 1.5vw;
+        }
+
+        .button-1-2 {
+            background-color: white;
+            color: rgb(47, 114, 240);
+            ;
+            padding: 1.5vh 1vw;
+            font-size: 20px;
+            border: 1px solid rgb(47, 114, 240);
+            ;
+            border-radius: 30px;
+        }
+
+        .box1 img {
+            padding-top: 3vh;
+            width: 100%
+        }
+
+        .box2 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin-bottom: 2vh;
+            padding: 6vh 0vh;
+        }
+
+        .button-1-3 {
+            background-color: black;
+            color: rgb(47, 114, 240);
+            ;
+            padding: 1.5vh 1.5vw;
+            font-size: 20px;
+            border: 1px solid rgb(47, 114, 240);
+            ;
+            border-radius: 30px;
+        }
+
+        .box2 img {
+            height: 80vh;
+            width: 100%;
+        }
+
+        .box3 {
+            text-align: center;
+            color: black;
+            margin-bottom: 2vh;
+            padding: 6vh 0vh 0vh 0vh;
+            background-color: whitesmoke;
+        }
+
+        .box3 img {
+            height: 60vh;
+            width: 100%;
+        }
+
+        .button-1-4 {
+            background-color: white;
+            color: rgb(47, 114, 240);
+            ;
+            padding: 1.5vh 1.5vw;
+            font-size: 20px;
+            border: 1px solid rgb(47, 114, 240);
+            ;
+            border-radius: 30px;
+        }
+
+        .box4 {
+            display: inline-block;
+            text-align: center;
+            color: white;
+            background-color: black;
+            margin-left: 1vw;
+            margin-bottom: 2vh;
+            padding: 5vh 0vw 5vh 1vw;
+            width: 47.5vw;
+        }
+
+        .box4 img {
+            height: 50vh;
+            width: 70%;
+            padding-top: 1vh;
+        }
+
+        .button-1-5 {
+            background-color: rgb(47, 114, 240);
+            ;
+            color: white;
+            padding: 1.5vh 1vw;
+            font-size: 18px;
+            border: 1px;
+            border-radius: 30px;
+            margin-top: 1.5vh;
+            margin-right: 1.5vw;
+        }
+
+        .button-1-6 {
+            background-color: black;
+            color: rgb(47, 114, 240);
+            padding: 1.5vh 1.5vw;
+            font-size: 18px;
+            border: 1px solid rgb(47, 114, 240);
+            border-radius: 30px;
+        }
+
+        .button-1-7 {
+            background-color: transparent;
+            color: rgb(47, 114, 240);
+            padding: 1.5vh 1.5vw;
+            font-size: 18px;
+            border: 1px solid rgb(47, 114, 240);
+            border-radius: 30px;
+            margin-top: 1.5vh;
+            margin-right: 1.5vw;
+        }
+
+        .button-1-1:hover,
+        .button-1-5:hover {
+            background-color: rgb(29, 102, 237);
+            cursor: pointer;
+        }
+
+        .button-1-2:hover,
+        .button-1-4:hover,
+        .button-1-7:hover {
+            color: white;
+            background-color: rgb(47, 114, 240);
+            cursor: pointer;
+        }
+
+        .button-1-3:hover,
+        .button-1-6:hover {
+            color: black;
+            background-color: rgb(47, 114, 240);
+            cursor: pointer;
+        }
+
+        .box5 {
+            display: inline-block;
+            text-align: center;
+            color: black;
+            background-color: whitesmoke;
+            margin-left: 0.5vw;
+            padding: 5vh 1vw 5vh 0vw;
+            width: 47.5vw;
+        }
+
+        .box5 img {
+            height: 50vh;
+            width: 70%;
+            padding-top: 1vh;
+        }
+
+        .box6 {
+            display: inline-block;
+            text-align: center;
+            color: white;
+            background-color: black;
+            margin-left: 1vw;
+            margin-bottom: 2vh;
+            padding: 5vh 0vw 0vh 0vw;
+            width: 48.5vw;
+        }
+
+        .box6 img {
+            height: 50vh;
+            width: 100%;
+            padding-top: 1vh;
+        }
+
+        .box6 h5 {
+            color: rgb(172, 5, 5);
+            font-size: 16px;
+            letter-spacing: 3px;
+            padding-bottom: 1vh;
+        }
+
+        .box7 {
+            display: inline-block;
+            text-align: center;
+            color: black;
+            background-color: whitesmoke;
+            margin-right: 1vw;
+            margin-left: 1.5vw;
+            width: 47.5vw;
+            position: relative;
+        }
+
+        .box7 img {
+            height: 77.5vh;
+            width: 100%;
+        }
+
+        .vision-pro-text {
+            z-index: 1;
+            position: absolute;
+            top: 72%;
+            left: 27%;
+        }
+
+        .box8 {
+            display: inline-block;
+            text-align: center;
+            color: black;
+            background-color: white;
+            margin-left: 1vw;
+            padding: 5vh 0vw 0vh 0vw;
+            width: 48.5vw;
+        }
+
+        .box8 img {
+            width: 70%;
+            padding-top: 4vh;
+        }
+
+        .box9 {
+            display: inline-block;
+            text-align: center;
+            color: black;
+            width: 47.5vw;
+            background-color: white;
+            margin-left: 0.5vw;
+            margin-right: 1vw;
+            padding: 4vh 0vw 0vh 0vw;
+            width: 48.5vw;
+        }
+
+        .box9 img {
+            height: 50vh;
+            width: 100%;
+        }
+
+        /* Footer */
+
+        .footer {
+            background-color: whitesmoke;
+            color: gray;
+            font-size: 15px;
+            line-height: 1.3;
+            width: 61vw;
+            padding: 2vh 19.5vw 2vh 19.5vw;
+        }
+
+        .description-box a {
+            color: rgb(76, 72, 72);
+        }
+
+        .line {
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+
+        .footer-links {
+            padding-top: 1vh;
+        }
+
+        .list-container {
+            display: inline-block;
+            width: 12vw;
+            vertical-align: top;
+            padding-bottom: 4vh;
+        }
+
+        .list-container a:hover {
+            text-decoration: underline;
+        }
+
+        .main-list {
+            display: inline;
+            color: black;
+            font-weight: 500;
+            line-height: 2;
+        }
+
+        .main-list li {
+            color: rgb(76, 72, 72);
+            list-style-type: none;
+        }
+
+        li a {
+            font-weight: normal;
+            color: rgb(76, 72, 72);
+            text-decoration: none;
+        }
+
+        .blue-links {
+            color: rgb(47, 114, 240);
+        }
+
+        .copyright-box {
+            padding-top: 1vh;
+        }
+
+        .copyright {
+            padding-right: 2vw;
+        }
+
+        .copyright-box a {
+            color: rgb(76, 72, 72);
+            text-decoration: none;
+            padding: 0vw 0.5vw
+        }
+
+        .footer-location {
+            padding-left: 8.5vw;
+        }
+
+        .copyright-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="nav-div">
+
+            <ul class="navbar">
+                <li><img width="25px" src="apple-logo.png" alt="apple-logo"></li>
+                <li><a href="https://www.apple.com/us/shop/goto/store">Store</a></li>
+                <li><a href="https://www.apple.com/mac/">Mac</a></li>
+                <li><a href="https://www.apple.com/ipad/">iPad</a></li>
+                <li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+                <li><a href="https://www.apple.com/watch/">Watch</a></li>
+                <li><a href="https://www.apple.com/apple-vision-pro/">Vision</a></li>
+                <li><a href="https://www.apple.com/airpods/">AirPods</a></li>
+                <li><a href="https://www.apple.com/tv-home/">TV & Home</a></li>
+                <li><a href="https://www.apple.com/entertainment/">Entertainment</a></li>
+                <li><a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+                <li><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a></li>
+                <li><img width="40px" src="search-icon.png" alt="search-icon"></li>
+                <li><img width="35px" src="bag-icon.png" alt="bag-icon"></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="box1">
+
+            <div>
+                <h1>Apple Intelligence</h1>
+                <h3>AI for the rest of us.</h3>
+                <p>Coming in beta this fall</p>
+
+                <div class="button">
+                    <a href="https://www.apple.com/apple-intelligence/"><button class="button-1-1">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a
+                        href="https://www.apple.com/105/media/us/apple-intelligence/2024/05be55cf-0af7-4356-8420-f83e72fdfe6f/films/product/apple-intelligence-product-tpl-us-2024_16x9.m3u8"><button
+                            class="button-1-2">
+                            Watch The Film
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="apple-ai.png" alt="apple-ai">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box2">
+
+            <div>
+                <h1>iPhone 15 Pro</h1>
+                <h3>Titanium.So Strong.So Light.So Pro</h3>
+
+                <div class="button">
+                    <a href="https://www.apple.com/iphone-15-pro/"><button class="button-1-1">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_15_pro"><button class="button-1-3">
+                            Buy
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="iphone-15-pro.png" alt="iphone-15-pro">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box3">
+
+            <div>
+                <h1>iPhone 15</h1>
+                <h3>New camera.New design.Newphoria.</h3>
+
+                <div class="button">
+                    <a href="https://www.apple.com/iphone-15/"><button class="button-1-1">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_15"><button class="button-1-4">
+                            Buy
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="iphone-15.png" alt="iphone-15-pro">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box4">
+
+            <div>
+                <h2>iPad Pro</h2>
+                <h4>Unbelievably thin.Incredibly powerful.</h4>
+
+                <div class="button">
+                    <a href="https://www.apple.com/ipad-pro/"><button class="button-1-5">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/ipad_pro/select"><button class="button-1-6">
+                            Buy
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="ipad-pro.png" alt="ipad-pro">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="box5">
+
+            <div>
+                <h2>MacBook Air</h2>
+                <h4>Lean.Mean.M3 machine.</h4>
+
+                <div class="button">
+                    <a href="https://www.apple.com/macbook-air/"><button class="button-1-5">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/buy_mac/macbook_air"><button class="button-1-7">
+                            Buy
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="macbook-air.png" alt="macbook-air">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="box6">
+
+            <div>
+                <h2>&#x1F34E Watch</h2>
+                <h5>SERIES 9</h5>
+                <h4>Smarter.Brighter.Mightier.</h4>
+
+                <div class="button">
+                    <a href="https://www.apple.com/apple-watch-series-9/"><button class="button-1-5">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/buy_watch/apple_watch_series_9"><button
+                            class="button-1-6">
+                            Buy
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="apple_watch_series_9.png" alt="apple-watch">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="box7">
+
+            <div>
+
+                <div>
+                    <img src="vision-pro-guy-scaled.jpg" alt="vision-pro">
+                </div>
+
+                <div class="vision-pro-text">
+
+                    <h2>&#x1F34E Vision Pro</h2>
+                    <h4>The era of spatial computing is here.</h4>
+
+                    <div class="button">
+                        <a href="https://www.apple.com/apple-vision-pro/"><button class="button-1-5">
+                                Learn More
+                            </button></a>
+
+                    </div>
+
+                    <div class="button">
+                        <a href="https://www.apple.com/us/shop/goto/buy_vision/apple_vision_pro"><button
+                                class="button-1-7">
+                                Buy
+                            </button></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="box8">
+
+            <div>
+                <h2>&#x1F34E Card</h2>
+                <h4>Get upto 3% Daily Cash back with every purchase.</h4>
+
+                <div class="button">
+                    <a href="https://www.apple.com/apple-card/"><button class="button-1-5">
+                            Learn More
+                        </button></a>
+
+                </div>
+
+                <div class="button">
+                    <a href="https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&start=false"><button
+                            class="button-1-7">
+                            Apply Now
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="apple-card.jpg" alt="apple-card">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="box9">
+
+            <div>
+                <h2>&#x1F34E Trade In</h2>
+                <h4>Get $170 -$630 in credit when you trade in iPhone 11 or higher.</h4>
+
+                <div class="button">
+                    <a href="https://www.apple.com/us/shop/goto/trade_in"><button class="button-1-5">
+                            Get Your Estimate
+                        </button></a>
+
+                </div>
+
+                <div>
+                    <img src="apple-trade-in.jpg" alt="trade-in">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <article>
+        <div class="promo-box">
+            <img src="apple-tv-promo.png" alt="apple-tv">
+
+            <img src="apple-tv-shows.png" alt="apple-tv-shows">
+
+        </div>
+    </article>
+
+    <footer>
+
+        <div class="footer">
+
+            <div class="description-box">
+
+                <p>1. Apple Intelligence will be available in beta on iPhone 15 Pro, iPhone 15 Pro Max, and iPad and Mac
+                    with M1 and later, with Siri and device language set to U.S. English, as part of iOS 18, iPadOS 18,
+                    and macOS Sequoia this fall.</p>
+
+                <br>
+
+                <p>2. Trade-in values will vary based on the condition, year, and configuration of your eligible
+                    trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be
+                    eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward
+                    qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on
+                    receipt of a qualifying device matching the description provided when estimate was made. Sales tax
+                    may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a
+                    valid photo ID (local law may require saving this information). Offer may not be available in all
+                    stores, and may vary between in-store and online trade-in. Some stores may have additional
+                    requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any
+                    trade-in transaction for any reason. More details are available from Apple's trade-in partner for
+                    trade-in and recycling of eligible devices. Restrictions and limitations may apply.
+                </p>
+
+                <br>
+
+                <p>Available in the U.S. on <a href="https://www.apple.com">apple.com</a>, in the Apple Store app, and
+                    at Apple Stores.</p>
+
+                <br>
+
+                <p>To access and use all Apple Card features and products available only to Apple Card users, you must
+                    add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or
+                    iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the
+                    United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch. </p>
+
+                <br>
+
+                <p>If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about
+                    Apple Card.</p>
+
+                <br>
+
+                <p>Learn more about how Apple Card applications are evaluated at <a
+                        href="https://support.apple.com/en-us/102585">support.apple.com/kb/HT209218</a>.</p>
+
+                <br>
+
+                <p>A subscription is required for Apple TV+.</p>
+
+                <br>
+
+                <p>A subscription is required for Apple Arcade, Apple Fitness+, and Apple Music.</p>
+
+            </div>
+
+            <p class="line">
+                ______________________________________________________________________________________________________________________________________________________________________________
+            </p>
+
+            <div class="footer-links">
+
+                <div class="list-container">
+
+                    <ul class="main-list">Shop and Learn
+
+                        <li><a href="https://www.apple.com/us/shop/goto/store">Store</a></li>
+                        <li><a href="https://www.apple.com/mac/">Mac</a></li>
+                        <li><a href="https://www.apple.com/ipad/">iPad</a></li>
+                        <li><a href="https://www.apple.com/iphone/">iPhone</a></li>
+                        <li><a href="https://www.apple.com/watch/">Watch</a></li>
+                        <li><a href="https://www.apple.com/apple-vision-pro/">Vision</a></li>
+                        <li><a href="https://www.apple.com/airpods/">AirPods</a></li>
+                        <li><a href="https://www.apple.com/tv-home/">TV & Home</a></li>
+                        <li><a href="https://www.apple.com/airtag/">AirTag</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">Apple Wallet
+
+                        <li><a href="https://www.apple.com/wallet/">Wallet</a></li>
+                        <li><a href="https://www.apple.com/apple-card/">Apple Card</a></li>
+                        <li><a href="https://www.apple.com/apple-pay/">Apple Pay</a></li>
+                        <li><a href="https://www.apple.com/apple-cash/">Apple Cash</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="list-container">
+
+                    <ul class="main-list">Account
+
+                        <li><a href="https://appleid.apple.com/us/">Manage Your Apple ID</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/account">Apple Store Account</a></li>
+                        <li><a href="https://www.icloud.com/">iCloud.com</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">Entertainment
+
+                        <li><a href="https://www.apple.com/apple-one/">Apple One</a></li>
+                        <li><a href="https://www.apple.com/apple-tv-plus/">Apple TV+</a></li>
+                        <li><a href="https://www.apple.com/apple-music/">Apple Music</a></li>
+                        <li><a href="https://www.apple.com/apple-arcade/">Apple Arcade</a></li>
+                        <li><a href="https://www.apple.com/apple-fitness-plus/">Apple Fitness+</a></li>
+                        <li><a href="https://www.apple.com/apple-news/">Apple News+</a></li>
+                        <li><a href="https://www.apple.com/apple-podcasts/">Apple Podcasts</a></li>
+                        <li><a href="https://www.apple.com/apple-books/">Apple Books</a></li>
+                        <li><a href="https://www.apple.com/app-store/">App Store</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="list-container">
+
+                    <ul class="main-list">Apple Store
+
+                        <li><a href="https://www.apple.com/retail/">Find a Store</a></li>
+                        <li><a href="https://www.apple.com/retail/geniusbar/">Genius Bar</a></li>
+                        <li><a href="https://www.apple.com/today/">Today At Apple</a></li>
+                        <li><a href="https://www.apple.com/today/groups/">Group Reservations</a></li>
+                        <li><a href="https://www.apple.com/today/camp/">Apple Camp</a></li>
+                        <li><a href="https://apps.apple.com/us/app/apple-store/id375380948">Apple App Store</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/special_deals">Certified Refurbished</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/trade_in">Apple Trade In</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/payment_plan">Financing</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers">Carrier Deals at
+                                Apple</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/order/list">Order Status</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/help">Shopping Help</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="list-container">
+
+                    <ul class="main-list">For Business
+
+                        <li><a href="https://www.apple.com/business/">Apple and Business</a></li>
+                        <li><a href="https://www.apple.com/retail/business/">Shop For Business</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">For Education
+
+                        <li><a href="https://www.apple.com/education/">Apple and Education</a></li>
+                        <li><a href="https://www.apple.com/education/k12/how-to-buy/">Shop For K-12</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/educationrouting">Shop For College</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">For Healthcare
+
+                        <li><a href="https://www.apple.com/healthcare/">Apple in Healthcare</a></li>
+                        <li><a href="https://www.apple.com/healthcare/apple-watch/">Health on Apple Watch</a></li>
+                        <li><a href="https://www.apple.com/healthcare/health-records/">Health Records on iPhone</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">For Government
+
+                        <li><a href="https://www.apple.com/r/store/government/">Shop for Government</a></li>
+                        <li><a href="https://www.apple.com/us/shop/goto/eppstore/veteransandmilitary">Shop for Veternas
+                                and Military</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="list-container">
+
+                    <ul class="main-list">Apple Values
+
+                        <li><a href="https://www.apple.com/accessibility/">Accessibility</a></li>
+                        <li><a href="https://www.apple.com/education-initiative/">Education</a></li>
+                        <li><a href="https://www.apple.com/environment/">Environment</a></li>
+                        <li><a href="https://www.apple.com/diversity/">Inclusion and Diversity</a></li>
+                        <li><a href="https://www.apple.com/privacy/">Privacy</a></li>
+                        <li><a href="https://www.apple.com/racial-equity-justice-initiative/">Racial Equality and
+                                Justice</a></li>
+                        <li><a href="https://www.apple.com/supply-chain/">Supply Chain</a></li>
+
+                    </ul>
+
+                    <br>
+
+                    <ul class="main-list">About Apple
+
+                        <li><a href="https://www.apple.com/newsroom/">Newsroom</a></li>
+                        <li><a href="https://www.apple.com/leadership/">Apple Leadership</a></li>
+                        <li><a href="https://www.apple.com/careers/us/">Career Opportunities</a></li>
+                        <li><a href="https://investor.apple.com/">Investors</a></li>
+                        <li><a href="https://www.apple.com/compliance/">Ethics & Compliance</a></li>
+                        <li><a href="https://www.apple.com/apple-events/">Events</a></li>
+                        <li><a href="https://www.apple.com/contact/">Contact Apple</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <p>More ways to shop: <a class="blue-links" href="https://www.apple.com/retail/">Find an Apple Store</a> or
+                <a class="blue-links" href="https://locate.apple.com/">other retailer</a> near you. Or call
+                1-800-MY-APPLE.
+            </p>
+
+            <p class="line">
+                ______________________________________________________________________________________________________________________________________________________________________________
+            </p>
+
+            <div class="copyright-box">
+
+                <span class="copyright">Copyright &copy; 2024 Apple Inc. All Rights reserved.</span>
+
+                <span><a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> | <a
+                        href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of Use</a> | <a
+                        href="https://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Service</a> |
+                    <a href="https://www.apple.com/legal/">Legal</a> | <a href="https://www.apple.com/sitemap/">Site
+                        Map</a></span>
+
+                <span><a href="https://www.apple.com/choose-country-region/">United States</a></span>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
